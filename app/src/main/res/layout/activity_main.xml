@@ -83,7 +83,7 @@
             app:layout_constraintTop_toBottomOf="@id/telefone_sp" >
 
             <EditText
-                android:id="@+id/elefone_celular_et"
+                android:id="@+id/telefone_celular_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Celular: "
@@ -168,9 +168,39 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/formacao_tv"/>
 
+        <EditText
+            android:id="@+id/vagas_interesse_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vagas de Interesse: "
+            android:inputType="textWebEditText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/formacao_sp"/>
 
+        <Button
+            android:id="@+id/salvar_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vagas_interesse_et" />
 
-
+        <Button
+            android:id="@+id/limpar_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpar"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/salvar_bt" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

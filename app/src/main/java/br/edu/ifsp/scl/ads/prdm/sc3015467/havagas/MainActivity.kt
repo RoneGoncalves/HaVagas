@@ -22,15 +22,13 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 if (position > 0) {
-                    activityMainBinding.telefoneCelularLl.visibility = View.VISIBLE
+                    activityMainBinding.telefoneCelularEt.visibility = View.VISIBLE
                 } else {
-                    activityMainBinding.telefoneCelularLl.visibility = View.GONE
+                    activityMainBinding.telefoneCelularEt.visibility = View.GONE
                 }
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                activityMainBinding.telefoneCelularLl.visibility = View.GONE
-            }
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
     }
 }
